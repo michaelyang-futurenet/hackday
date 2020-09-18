@@ -62,9 +62,11 @@ public class GoogleSearchClient {
                     }).handleResponse(response);
                     List<String> urls = new ArrayList<>();
                     final List<Map<String, String>> items = retMap.get("items");
-                    for (Map<String, String> item : items) {
-                        final String url = item.get("link");
-                        urls.add(url);
+                    if (items != null) {
+                        for (Map<String, String> item : items) {
+                            final String url = item.get("link");
+                            urls.add(url);
+                        }
                     }
                     totalUrls.add(urls);
                 }
