@@ -13,7 +13,7 @@
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
         <init-param>
             <param-name>javax.ws.rs.Application</param-name>
-            <param-value>com.smartbrief.alquemie.rest.AlquemieRestApplication</param-value>
+            <param-value>com.future.hackday.rest.HackdayRestApplication</param-value>
         </init-param>
     </servlet>
     <servlet-mapping>
